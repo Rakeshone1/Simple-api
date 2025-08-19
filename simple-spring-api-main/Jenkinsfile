@@ -14,18 +14,18 @@ pipeline {
     environment {
         // define the SonarQube server URL and credentials
         SONARQUBE_SERVER = 'SonarCloud'
-        SONAR_PROJECT_KEY = 'ashish-panicker_simple-spring-api'
-        SONAR_PROJECT_NAME = 'simple-spring-api'
-        SONAR_ORGANIZATION = 'ashish-panicker'
+        SONAR_PROJECT_KEY = 'rakeshone1_simple-api'
+        SONAR_PROJECT_NAME = 'simple-api'
+        SONAR_ORGANIZATION = 'Rakeshone1'
         // --- Docker / Deploy ---
         APP_NAME              = 'simple-spring-api'
         // <username>/<repo>
-        DOCKER_IMAGE          = "ashishspanicker/${APP_NAME}"    
-        CONTAINER_NAME        = 'simple-spring-api'
+        DOCKER_IMAGE          = "Rakeshnewone/${APP_NAME}"    
+        CONTAINER_NAME        = 'simple-api'
         // container port your app listens on
         APP_PORT              = '9595'                          
         // Jenkins credential (username+password) for registry login
-        DOCKERHUB_CREDENTIALS = 'docker-credentials'
+        DOCKERHUB_CREDENTIALS = 'id'
         // Optional: set a host port different from container port (e.g., '9595:9595')
         HOST_PORT_MAPPING     = '9595:9595'
 
